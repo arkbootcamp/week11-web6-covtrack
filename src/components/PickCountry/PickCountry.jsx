@@ -26,9 +26,7 @@ const PickCountry = ({ handleCountryChange }) => {
 
   return (
     <FormControl className={styles.formControl}>
-      {/* =============================== */}
       <NativeSelect onChange={(event) => handleCountryChange(event)}>
-        {/* =============================== */}
         <option value="">Global</option>
         {countries.map((item, index) => (
           <option key={index} value={item.name}>
